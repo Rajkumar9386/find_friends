@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<!-- <html lang="ar" dir="rtl"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+
+    <!-- CSS only -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts -->
+    <title>Find Friend</title>
+  </head>
+  <body class="login-bg2">
+
+    <div class="flash-video-container">
+        <div class="big-brand-wrap">
+            <img src="img/svg/find_friend.svg" class="img-fluid"/>
+        </div>
+        <div class="flash-video-wrap">
+            <div class="take-pic-white-card-container">
+                <h4 class="take-pic-title">Take Your Photo Now</h4>
+                <div class="take-pic-wrap text-center">
+                    <img src="img/svg/take-pic.svg" class="take-img img-fluid"/>
+                </div>
+                <p class="take-pic-desc">We Will Not Share Or Use Your Photo Anywhere!<br/> This Is Just To Make This Platform Safer.</p>
+                <div class="profile-pic-preview">
+                    <img src="img/take-pic-sm.jpeg" class="t-profile-pic img-fluid"/>
+                    <img src="img/svg/close-pink.svg" class="t-profile-close"/>
+                </div>
+
+                <div class="mb-3 button-wrap take-pic-btn-wrap">
+                    <a href="index.html" class="btn btn-submit">Done</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script>
+        $(function() {
+
+            // Removing * mark from email field
+            $(".email-fc").focusin(function() {
+                $(".required-text").hide();
+            }).focusout(function () {
+                $(".required-text").show();
+            });
+
+            $('.email-fc').blur(function() {
+                var $this = $(this);
+                if ($this.val().length > 1){
+                    $(".required-text").hide();
+                }
+            });
+
+            // Changing Body Background
+            $('#login-tab').click( function() {
+                if($(this).is(".active")) {
+                    $('body').addClass('login-bg2');
+                    $('body').removeClass('login-bg1');
+                }
+            })
+            $('#signup-tab').click( function() {
+                if($(this).is(".active")) {
+                    $('body').addClass('login-bg1');
+                    $('body').removeClass('login-bg2');
+                }
+            })
+
+            // Change tab
+            $('.already-acc-btn').click( function() {
+                if($('#myTabContent #signup').is(".active")) {
+                    $('#signup').removeClass('active');
+                    $('#signup').removeClass('show');
+                    $('#signup-tab').removeClass('active');
+                    $('#login').addClass('show');
+                    $('#login').addClass('active');
+                    $('#login-tab').addClass('active');
+                    $('body').addClass('login-bg2');
+                    $('body').removeClass('login-bg1');
+                }
+            })
+            $('.dont-have-acc').click( function() {
+                if($('#myTabContent #login').is(".active")) {
+                    $('#signup').addClass('active');
+                    $('#signup').addClass('show');
+                    $('#signup-tab').addClass('active');
+
+                    $('#login').removeClass('show');
+                    $('#login').removeClass('active');
+                    $('#login-tab').removeClass('active');
+                    $('body').removeClass('login-bg2');
+                    $('body').addClass('login-bg1');
+                }
+            })
+        });
+    </script>
+
+    <!-- Navbar toggling class -->
+    <!-- <script>
+          $(document).scroll(function() {
+              console.log("hello")
+              var scroll = $(window).scrollTop();
+              if (scroll >= 500) {
+                  $("#header").addClass("lightHeader");
+                  $(".navbar-brand").addClass("sm-logo");
+                  $("#header .container-fluid").removeClass("align-items-start");
+              } else if (scroll < 500){
+                  $("#header").removeClass("lightHeader");
+                  $(".navbar-brand").removeClass("sm-logo");
+                  $("#header .container-fluid").addClass("align-items-start");
+              }
+          })
+
+      $(".navbar-toggler").click(function(){
+        $(".navbar-toggler-icon").toggleClass("close");
+      });
+    </script> -->
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<!-- <html lang="ar" dir="rtl"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+
+    <!-- CSS only -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts -->
+    <title>Find Friend</title>
+  </head>
+  <body>
+    
+    <header>
+        <nav class="navbar navbar-top sticky-top navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/svg/logo.svg" class="logo-img"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="nav-search-location-view-edit-container">
+                        <div class="search-location-container">
+                            <div class="search-location-input-group">
+                                <div class="search-input-wrap position-relative">
+                                    <img src="img/svg/icon_search.svg" class="search-img"/>
+                                    <input type="text" aria-label="First name" class="form-control" placeholder="SEARCH">
+                                </div>
+                                <div class="location-input-wrap position-relative">
+                                    <img src="img/svg/icon_location_black.svg" class="location-img"/>
+                                    <input type="text" aria-label="First name" class="form-control" placeholder="NEAR ME">
+                                    <div class="locate-search-btn">
+                                        <img src="img/svg/icon_locate_black.svg" class="locate-img"/>
+                                        <button type="button" class="btn btn-search">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-setting-container">
+                            <div class="view-wrap">
+                                <img src="img/svg/icon_eye_gradient.svg" class="eye-graident-img"/>
+                                <span>480</span>
+                            </div>
+                            <div class="setting-wrap">
+                                <a href="#" class="setting-edit-link">
+                                    <img src="img/svg/icon_setting.svg" class="setting-img"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 p-0">
+                    <div class="left-content-container">
+                        <div class="profile-info-wrap">
+                            <div class="profile-pic-wrap">
+                                <img src="img/take-pic-sm.jpeg" class="profil-pic"/>
+                                <i class="fa-solid fa-circle"></i>
+                                <div class="profile-image-upload">
+                                    <label for="file-input">
+                                        <img src="img/svg/icon_camera_black.svg" class="edit-pic"/>
+                                    </label>
+                                    <input id="file-input" type="file"/>
+                                </div>
+                            </div>
+                            <div class="profile-info-content">
+                                <h6 class="profile-name">Monica</h6>
+                                <p class="user-designation">Model</p>
+                                <div class="user-location-wrap">
+                                    <img src="img/svg/icon_location_graident.svg" class="user-location-img"/>
+                                    <span class="user-location-info">My Live Location :</span>
+                                    <span class="user-location-info text-graident">Dubai Marina</span>
+                                </div>
+                                <p class="user-num-dob-wrap">
+                                    <span>Mobile +971 55 1234567</span>
+                                    <span>|</span>
+                                    <span>DOB : 18 Jan 1984</span>
+                                </p>
+                                <div class="user-video-profile">
+                                    <img src="img/svg/close-pink.svg" class="vid-close-icon"/>
+                                    <div class="user-video-box" id="user-pro-video">
+                                        <video muted width="100%" class="video" preload="none" poster="img/profile-vid.jpeg">
+                                            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4">
+                                          </video>
+                                        <div class="playpause"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pff-container">
+                            <div class="pff-items">
+                                <div class="pff-post-gradient-wrap">
+                                    <span class="pff-count">234</span>
+                                    <span class="pff-name">Post</span>
+                                </div>
+                                <div class="pff-post-outline-wrap">
+                                    <img src="img/svg/icon_follow.svg" class="pff-icon"/>
+                                    <span class="pff-name2">Follow</span>
+                                </div>
+                                <div class="pff-post-outline-wrap">
+                                    <img src="img/svg/icon_friends.svg" class="pff-icon"/>
+                                    <span class="pff-name2">Friends</span>
+                                </div>
+                            </div>
+                            <div class="pff-items">
+                                <div class="pff-post-gradient-wrap">
+                                    <span class="pff-count">7,384</span>
+                                    <span class="pff-name">Followers</span>
+                                </div>
+                                <div class="pff-post-outline-wrap">
+                                    <img src="img/svg/icon_share_location.svg" class="pff-icon"/>
+                                    <span class="pff-name2">Share Location</span>
+                                </div>
+                                <div class="pff-post-outline-wrap">
+                                    <img src="img/svg/icon_share_profile.svg" class="pff-icon"/>
+                                    <span class="pff-name2">Share Profile</span>
+                                </div>
+                            </div>
+                            <div class="pff-items">
+                                <div class="pff-post-gradient-wrap">
+                                    <span class="pff-count">872</span>
+                                    <span class="pff-name">Following</span>
+                                </div>
+                                <div class="pff-post-outline-wrap">
+                                    <img src="img/svg/icon_live_chat.svg" class="pff-icon"/>
+                                    <span class="pff-name2">Live Chat</span>
+                                </div>
+                                <div class="pff-post-outline-wrap">
+                                    <img src="img/svg/icon_live_stream.svg" class="pff-icon"/>
+                                    <span class="pff-name2">Live Stream</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-media-wrap">
+                            <h3 class="social-media-title">My Social Media</h3>
+                            <div class="social-media-icons-wrap">
+                                <img src="img/svg/social_insta.svg" class="social-media-icon"/>
+                                <img src="img/svg/social_fb_fill.svg" class="social-media-icon"/>
+                                <img src="img/svg/social_tiktok.svg" class="social-media-icon"/>
+                                <img src="img/svg/social_yt.svg" class="social-media-icon"/>
+                                <img src="img/svg/social_snapchat.svg" class="social-media-icon"/>
+                            </div>
+                        </div>
+
+                        <div class="bio-wrap">
+                            <h3 class="social-media-title">Bio</h3>
+                            <p class="bio-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tincidunt dfgutsed diam is anonummy nibh euismod tincidunt dolor sit amet, consectetuer.</p>
+                        </div>
+
+                        <div class="interest-wrap">
+                            <h3 class="social-media-title">Interest</h3>
+                            <div class="interest-area-name-wrap">
+                                <span>Dancing</span>
+                                <span>|</span>
+                                <span>Music</span>
+                                <span>|</span>
+                                <span>Clubbing</span>
+                                <span>|</span>
+                                <span>Traveling</span>
+                            </div>
+                            <div class="photo-video-container">
+                                <ul class="nav nav-pills" id="video-photo-tab" role="tablist">
+                                    <li role="presentation" class="nav-item">
+                                        <a href="#photo" class="nav-link active" id="photo-tab" data-bs-toggle="tab" role="tab" aria-controls="photo" aria-selected="true">Photo</a>
+                                    </li>
+                                    <li role="presentation" class="nav-item">
+                                        <a href="#video" class="nav-link" id="video-tab" data-bs-toggle="tab" role="tab" aria-controls="video" aria-selected="false">Video</a>
+                                    </li>
+                                    <li class="triple-dot-wrap">
+                                        <button type="button" class="btn trile-dot-btn">
+                                            <img src="img/svg/icon_triple_dot_white.svg" class="triple-dot-icon"/>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="photo" role="tabpanel" aria-labelledby="photo-tab">
+                                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <img src="img/take-pic-sm.jpeg" class="d-block w-100 video-photo-tab-pic" alt="Pictures">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="img/take-pic-sm.jpeg" class="d-block w-100 video-photo-tab-pic" alt="Pictures">
+                                              </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Next</span>
+                                            </button>
+                                          </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
+                                        <div class="pic-video-tab">
+                                            <div class="pic-video-box" id="pic-pro-video">
+                                                <video muted width="100%" class="video" preload="none" poster="img/profile-vid.jpeg">
+                                                    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4">
+                                                  </video>
+                                                <div class="playpause"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 bg-primary">PQR</div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+
+    <script>
+        $('#user-pro-video').parent().click(function () {
+            $("#user-pro-video video").prop('muted', false);
+        });
+
+        $('.video').parent().click(function () {
+            if($(this).children(".video").get(0).paused){        
+                $(this).children(".video").get(0).play(); 
+                $(this).children(".playpause").hide();
+            } else {       
+                $(this).children(".video").get(0).pause();
+                $(this).children(".playpause").show();
+            }
+        });
+    </script>
+
+    <!-- Navbar toggling class -->
+    <!-- <script>
+          $(document).scroll(function() {
+              console.log("hello")
+              var scroll = $(window).scrollTop();
+              if (scroll >= 500) {
+                  $("#header").addClass("lightHeader");
+                  $(".navbar-brand").addClass("sm-logo");
+                  $("#header .container-fluid").removeClass("align-items-start");
+              } else if (scroll < 500){
+                  $("#header").removeClass("lightHeader");
+                  $(".navbar-brand").removeClass("sm-logo");
+                  $("#header .container-fluid").addClass("align-items-start");
+              }
+          })
+
+      $(".navbar-toggler").click(function(){
+        $(".navbar-toggler-icon").toggleClass("close");
+      });
+    </script> -->
+
+</body>
+</html>

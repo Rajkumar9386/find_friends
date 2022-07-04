@@ -50,7 +50,7 @@ body {
 }
 /* Margins */
 .mt-45{margin-top: 45px;}
-
+main{margin-top: 140px;}
 
 
 /* Flash Page */
@@ -661,4 +661,65 @@ nav.navbar-top{
 .video-photo-tab-pic{
     height: 300px;
     object-fit: cover;
+}
+.pic-video-box{
+    position: relative;
+}
+.photo-video-container{
+    margin-top: 40px;
+}
+
+/* Right Side */
+.gradient-box{
+    background-image: linear-gradient(to right, #fd3dc6, #ff3d99, #ff5770, #ff774e, #fd9536);
+    padding: 15px 30px;
+}
+.gradient-box-label{
+    font: 24px 'ProximaNova_Bold', sans-serif;
+    color: #fff;
+}
+.gradient-box-search-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.gradient-box-search-input-wrap{
+    position: relative;
+    width: 40%;
+}
+.gradient-box-search-icon{
+    width: 18px;
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.gradient-box-search-fc{
+    height: 30px;
+    background: #fff;
+    border: none;
+    border-radius: 50px;
+    padding-left: 20px;
+}
+.form-range-label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    font: 20px 'ProximaNova', sans-serif;
+    color: #fff;
+}
+.location-range-wrap{
+    margin-top: 30px;
+}
+.form-range::-webkit-slider-thumb{
+    background-color: #000;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: -0.5rem;
+}
+.map-container iframe{
+    width: 100%;
+    height: 500px;
 }

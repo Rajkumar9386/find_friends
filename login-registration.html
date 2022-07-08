@@ -46,7 +46,24 @@
                                         <span class="input-group-text addon-icon" id="">
                                             <img src="img/svg/icon_mobile_white.svg" class="input-icons img-fluid"/>
                                         </span>
-                                        <input type="text" class="form-control" placeholder="Mobile">
+                                        <div class="btn-group" id="country-code-dropdown">
+                                            <a href="#" class="country-code-drp-toggle dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="img/country_flags/arab.png" class="country-icon"/>
+                                                <span class="country-start-text">+971</span>
+                                            </a>
+                                            <ul class="dropdown-menu country-dropdown-list">
+                                                <li value="1">
+                                                    <img src="img/country_flags/arab.png" class="country-icon"/>
+                                                    <a href="#">+971</a>
+                                                </li>
+                                                <li value="2">
+                                                    <img src="img/country_flags/USA.png" class="country-icon"/>
+                                                    <a href="#">+1</a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <input type="text" class="form-control bl-none" placeholder="Mobile">
                                     </div>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text addon-icon" id="">
@@ -58,8 +75,9 @@
                                         <span class="input-group-text addon-icon" id="">
                                             <img src="img/svg/icon_lock_white.svg" class="input-icons img-fluid"/>
                                         </span>
-                                        <img src="img/svg/icon_eye_white.svg" class="show-hide-value"/>
-                                        <input type="text" class="form-control password-fc" placeholder="Password">
+                                        <!-- <img src="img/svg/icon_eye_white.svg" class="show-hide-value"/> -->
+                                        <i class="fa-solid fa-eye show-hide-value"></i>
+                                        <input type="password" class="form-control password-fc" id="pass_log_id" placeholder="Password">
                                     </div>
                                     <div class="mb-3">
                                         <p class="mandatory-text">
@@ -204,26 +222,37 @@
         });
     </script>
 
-    <!-- Navbar toggling class -->
-    <!-- <script>
-          $(document).scroll(function() {
-              console.log("hello")
-              var scroll = $(window).scrollTop();
-              if (scroll >= 500) {
-                  $("#header").addClass("lightHeader");
-                  $(".navbar-brand").addClass("sm-logo");
-                  $("#header .container-fluid").removeClass("align-items-start");
-              } else if (scroll < 500){
-                  $("#header").removeClass("lightHeader");
-                  $(".navbar-brand").removeClass("sm-logo");
-                  $("#header .container-fluid").addClass("align-items-start");
-              }
-          })
+    <script>
+        $(function(){
+    
+            // Country Dropdown
+            $(".country-dropdown-list li").click(function(){
+                console.log($(this).attr('value'));
+                if($(this).attr('value') == 1){
+                    $("#country-code-dropdown .country-code-drp-toggle .country-icon").attr('src','img/country_flags/arab.png');
+                }
+                if($(this).attr('value') == 2){
+                    $("#country-code-dropdown .country-code-drp-toggle .country-icon").attr('src','img/country_flags/USA.png');
+                }
+                $("#country-code-dropdown span").text($(this).text());
+            });
 
-      $(".navbar-toggler").click(function(){
-        $(".navbar-toggler-icon").toggleClass("close");
-      });
-    </script> -->
+        });
+    </script>
+
+    <!-- Show password -->
+    <script>
+        $("body").on('click', '.show-hide-value', function() {
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $("#pass_log_id");
+            if (input.attr("type") === "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+
+        });
+    </script>
 
 </body>
 </html>

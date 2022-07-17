@@ -30,6 +30,215 @@
         gap: 30px;
         backdrop-filter: blur(6px);
     }
+    .footer-content-wrap,
+    .gradient-box-search-wrap{
+        display: grid;
+    }
+    .chat-container{
+        height: auto;
+        display: block;
+    }
+    .gradient-box-search-input-wrap,
+    .chat-left-window{
+        width: 100%;
+    }
+    .profil-pic{
+        width: 130px;
+    }
+    .profile-info-wrap{
+        gap: 15px;
+    }
+    main {
+        margin-top: 90px;
+    }
+    nav.navbar-top{
+        height: 90px;
+        padding: 15px;
+    }
+    .logo-img {
+        width: 150px;
+    }
+    .left-content-container{
+        padding: 15px;
+    }
+    .right-content-container{
+        padding: 3px;
+    }
+    .user-video-profile{
+        height: auto;
+        width: 100%;
+    }
+    .pff-container, 
+    .social-media-wrap, 
+    .interest-wrap,
+    .bio-wrap,
+    .photo-video-container{
+        margin-top: 25px;
+    }
+    .social-media-title{
+        margin-bottom: 7px;
+    }
+    .pff-items{
+        margin-bottom: 15px;
+        gap: 5px;
+    }
+    .pff-post-gradient-wrap{
+        padding: 5px;
+        gap: 5px;
+    }
+    .pff-name, .pff-name2, .pff-count{
+        font-size: 11px;
+    }
+    #video-photo-tab .nav-link{
+        font-size: 18px;
+    }
+    .gradient-box,
+    .user-search-wrap,
+    .top-receiver-user-info{
+        padding: 15px;
+    }
+    .gradient-box-label{
+        font-size: 20px;
+    }
+    .form-range-label{
+        font-size: 12px;
+        gap: 10px;
+    }
+    .form-range::-webkit-slider-thumb{
+        width: 1rem;
+        height: 1rem;
+        margin-top: -4px;
+    }
+    .users-list-items-container{
+        display: flex;
+        height: auto;
+        gap: 30px;
+    }
+    .user-item{
+        gap: 7px;
+        margin-bottom: 10px;
+    }
+    .receiver-top-user-pic{
+        width: 55px;
+    }
+    .receiver-top-user-desc, 
+    .top-receiver-user-info{
+        gap: 7px;
+    }
+    .receiver-userName{
+        font-size: 18px;
+    }
+    .receiver-user-status{
+        gap: 3px;
+    }
+    .receiver-user-status span{
+        font-size: 14px;
+    }
+    .receiver-user-status i{
+        font-size: 8px;
+    }
+    .receiver-live-location-wrap{
+        padding: 7px;
+    }
+    .receiver-live-location-wrap span{
+        font-size: 9px;
+        margin-left: 3px;
+    }
+    .receiver-live-location-icon {
+        width: 7px;
+    }
+    .chatBox{
+        padding: 15px;
+    }
+    .top-receiver-user-info{
+        background: rgba(255,255,255,0.8);
+    }
+    .chatBox-input-container{
+        padding: 0px 15px;
+    }
+    .messages p{
+        margin-bottom: 7px;
+    }
+    .chat-right-window{
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+    .invite-frnd-wrap{
+        margin-top: 5px;
+    }
+    .footer-container{
+        padding: 15px;
+    }
+    .copyright-text{
+        text-align: center;
+        font-size: 12px;
+    }
+    .footer-content-wrap{
+        gap: 20px;
+        justify-content: center;
+    }
+    .f-social-icons-wrap{
+        justify-content: center;
+    }
+    .f-menu-wrap{
+        display: block;
+    }
+    .newsletter-input-wrap{
+        margin-top: 15px;
+    }
+    .f-menu-wrap span{
+        margin: 0 5px;
+    }
+    #navbarSupportedContent{
+        background: #fff;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 90px;
+        box-shadow: 0px 8px 10px -5px #c1c1c1;
+        padding-bottom: 20px;
+    }
+    .search-input-wrap{
+        width: 40%;
+    }
+    .location-input-wrap{
+        width: 60%;
+    }
+    .search-location-input-group{
+        justify-content: flex-start;
+    }
+    .edit-form-row,
+    .pl-160{
+        padding: 0;
+    }
+    .edit-page-body{
+        padding: 15px;
+    }
+    .social-edit-form-item{
+        display: grid;
+        gap: 10px;
+    }
+    .edit-form-label,
+    .profile-non-edit-text,
+    .edit-form-non-radio-wrap span,
+    .edit-form-value input,
+    input[type='radio'].gender-fc ~ label,
+    .profile-no-edit{
+        font-size: 18px !important;
+    }
+    .edit-form-item{
+        gap: 5px;
+    }
+    .edit-form-label{
+        width: 120px;
+    }
+    .edit-form-toggle{
+        display: grid;
+        gap: 1px;
+    }
+    .form-switch{
+        margin-left: 12px;
+    }
 }
 
 @media (max-width: 768px) {

@@ -706,10 +706,21 @@ nav.navbar-top{
 }
 .triple-dot-icon{
     width: 30px;
+}
+.triple-dot-wrap{
     position: absolute;
     right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 40%;
+    /* transform: translateY(-50%); */
+    line-height: 0;
+}
+.trile-dot-btn{
+    padding: 0;
+    line-height: 0;
+}
+.dropdown-toggle.trile-dot-btn::after{display: none;}
+.dropdown-menu.show{
+    line-height: 1.4;
 }
 .video-photo-tab-pic{
     height: 300px;
@@ -942,6 +953,7 @@ nav.navbar-top{
 .chatBox::-webkit-scrollbar-thumb,
 .chatBox::-webkit-scrollbar-track{ 
     width: 8px;
+    height: 4px;
     border: none;
     background: transparent;
 }
@@ -1259,11 +1271,19 @@ nav.navbar-top{
 }
 .edit-top-icon{
     text-align: right;
-    font: 30px 'ProximaNova', sans-serif;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+.btn-edit-form{
+    font: 30px 'ProximaNova', sans-serif;
+    display: flex;
+    align-items: center;
     gap: 10px;
+}
+.btn-edit-form:focus{
+    outline: none;
+    box-shadow: none;
 }
 .edit-top-img{
     width: 40px;
@@ -1281,11 +1301,45 @@ nav.navbar-top{
 }
 .edit-form-value{
     flex: 1;
-    font: 20px 'ProximaNova', sans-serif;
+    font: 22px 'ProximaNova', sans-serif;
     margin: 0;
 }
 .edit-form-value span{
     font: 22px 'ProximaNova', sans-serif;
+}
+.profile-non-edit-text{
+    padding: 6px 12px;
+    margin: 0;
+    font: 22px 'ProximaNova', sans-serif;
+    border: 1px solid transparent;
+}
+.edit-form-non-radio-wrap,
+.profile-no-edit{
+    padding-left: 12px;
+}
+.edit-form-value input{
+    font: 22px 'ProximaNova', sans-serif;
+    width: max-content;
+    /* border: transparent; */
+}
+input[type='radio'].gender-fc:checked ~ label{
+    background: linear-gradient(to right, #fd3dc6, #ff3d99, #ff5770, #ff774e, #fd9536);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+input[type='radio'].gender-fc ~ label{
+    font: 22px 'ProximaNova', sans-serif;
+    cursor: pointer;
+}
+input[type='radio'].gender-fc{
+    visibility: hidden;
+}
+.edit-form-radio{
+    display: flex;
+    gap: 5px;
+}
+.edit-form-radio .form-check{
+    padding: 0;
 }
 .edit-form-toggle{
     display: flex;
@@ -1313,7 +1367,9 @@ nav.navbar-top{
 }
 
 /* Upload File */
-.upload-input-wrap [type=file] {
+.upload-input-wrap [type=file], 
+#picUpload[type=file],
+#attachmentUpload[type=file] {
     height: 0;
     overflow: hidden;
     width: 0;
@@ -1363,7 +1419,7 @@ nav.navbar-top{
     padding: 6px 12px;
     cursor: pointer;
   }
-.file-icon{
+.file-icon, .vfile-icon{
     width: 40px;
 }
 .file-upload-name-wrap, .vfile-upload-name-wrap{

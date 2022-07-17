@@ -183,9 +183,19 @@
                                         <a href="#video" class="nav-link" id="video-tab" data-bs-toggle="tab" role="tab" aria-controls="video" aria-selected="false">Video</a>
                                     </li>
                                     <li class="triple-dot-wrap">
-                                        <button type="button" class="btn trile-dot-btn">
+                                        <!-- <button type="button" class="btn trile-dot-btn">
                                             <img src="img/svg/icon_triple_dot_white.svg" class="triple-dot-icon"/>
-                                        </button>
+                                        </button> -->
+                                        <div class="dropdown">
+                                            <button class="btn trile-dot-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="img/svg/icon_triple_dot_white.svg" class="triple-dot-icon"/>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item" href="#">Action</a></li>
+                                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
@@ -471,7 +481,16 @@
                                             <span class="gradient-text">Downtown Duba</span>
                                         </div>
                                         <div class="more-wrap">
-                                            <img src="img/svg/icon_more_black.svg" class="more-icon"/>
+                                            <div class="dropdown">
+                                                <button class="btn trile-dot-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="img/svg/icon_more_black.svg" class="more-icon"/>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -555,15 +574,23 @@
                                             </button>
         
                                             <div class="camera-attachment-mic-buttons-wrap">
-                                                <button type="button" class="btn camera-send">
-                                                    <img src="img/svg/camera_black.svg" class="camera-icon"/>
-                                                </button>
-                                                <button type="button" class="btn attachment-send">
-                                                    <img src="img/svg/attachment_black.svg" class="attachment-icon"/>
-                                                </button>
-                                                <button type="button" class="btn mic-send">
-                                                    <img src="img/svg/mic_black.svg" class="mic-icon"/>
-                                                </button>
+                                                <div class="d-flex">
+                                                    <input type="file" id="picUpload"/>
+                                                    <label for="picUpload" class="btn camera-send">
+                                                        <img src="img/svg/camera_black.svg" class="camera-icon"/>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <input type="file" id="attachmentUpload"/>
+                                                    <label for="attachmentUpload" class="btn attachment-send">
+                                                        <img src="img/svg/attachment_black.svg" class="attachment-icon"/>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <button type="button" class="btn mic-send">
+                                                        <img src="img/svg/mic_black.svg" class="mic-icon"/>
+                                                    </button>
+                                                </div>
                                             </div>
         
                                         </div>
